@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AzouStyle - Admin</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="admin.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,24 +16,26 @@
             <a href="admin.html">Admin</a>
         </nav>
     </header>
+
     <main>
         <h2>Liste des commandes</h2>
         <table>
-            <tr>
-                <th>Référence</th>
-                <th>Produit</th>
-                <th>Quantité</th>
-                <th>Prix</th>
-                <th>Statut</th>
-            </tr>
-            <tr>
-                <td>12345</td>
-                <td>Produit 1</td>
-                <td>2</td>
-                <td>20 000 FCFA</td>
-                <td>En attente</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                    <th>Téléphone</th>
+                    <th>Articles</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="orders-container"></tbody>
         </table>
     </main>
+
+    <footer>
+        <p>&copy; 2023 AzouStyle. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
